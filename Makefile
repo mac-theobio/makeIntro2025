@@ -1,7 +1,6 @@
-## This is [project.Makefile] …
+## This is web/makeIntro2025
 
 ## This section is for Dushoff-style vim-setup and vim targeting
-## You can delete it if you don't want it
 current: target
 -include target.mk
 Ignore = target.mk
