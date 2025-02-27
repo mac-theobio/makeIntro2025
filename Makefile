@@ -12,10 +12,13 @@ vim_session:
 
 ######################################################################
 
+Sources += $(wildcard *.R)
+
 ## A non-trivial dependency with an explicit recipe
 calculate.Rout: calculate.R
 	R --vanilla < calculate.R > calculate.Rout
 
+Ignore += fev.csv
 fev.csv:
 	wget -O fev.csv "https://hbiostat.org/data/repo/FEV.csv"
 
