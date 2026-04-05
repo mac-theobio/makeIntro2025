@@ -7,7 +7,7 @@ Ignore = target.mk
 
 ## vim_session depends on no other files
 vim_session:
-	bash -cl "vmt README.md"
+	bash -ic "vmt README.md"
 
 ######################################################################
 
